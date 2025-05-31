@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Custom Popup Injector",
+  "version": "1.0",
+  "description": "Injects styled popup on page load and after call action.",
+  "permissions": ["scripting"],
+  "content_scripts": [
+    {
+      "matches": ["http://edezzg.de.t-internal.com:15506/wrapperTest/*","http://edezzg.de.t-internal.com:15509/wrapperTest/*"],
+      "js": ["content.js"],
+      "css": ["modal.css"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["modal.html"],
+      "matches": ["http://edezzg.de.t-internal.com:15506/wrapperTest/*","http://edezzg.de.t-internal.com:15509/wrapperTest/*"]
+    }
+  ]
+}
