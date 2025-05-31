@@ -6,7 +6,7 @@ if (!storedInput) {
 
   const submitBtn = document.getElementById("submit-btn");
   const closeBtn = document.getElementById("close-btn");
-
+  // test push
   submitBtn.addEventListener("click", () => {
     // main code logic
     const userInput = document.getElementById("user-input").value;
